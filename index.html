@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offline Movie Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/pouchdb@9.0.0/dist/pouchdb.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Offline Movie Manager</h1>
+
+    <div id="syncStatus">
+        Sync status: starting...
+    </div>
+
+    <hr>
+
+    <h2>Add Movie</h2>
+
+    <form id="movieForm">
+
+        <input
+            type="text"
+            id="title"
+            placeholder="Movie title"
+            required
+        >
+
+        <input
+            type="text"
+            id="actors"
+            placeholder="Actors separated by commas"
+            required
+        >
+
+        <input
+            type="text"
+            id="genres"
+            placeholder="Genres separated by commas"
+            required
+        >
+
+        <button type="submit">
+            Add Movie
+        </button>
+
+    </form>
+
+    <hr>
+
+    <h2>Movies</h2>
+
+    <div id="movieList"></div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
